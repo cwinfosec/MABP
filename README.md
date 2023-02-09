@@ -63,7 +63,7 @@ At times, MABP may provide information that is not accurate or appropriate for c
 If you're interested in contributing to the project, please reach out to the project maintainers for more information on how to get involved.
 
 ## References
-- [LIEF - Library to Instrument Executable Formats](https://lief.quarkslab.com)
+- [LIEF - Library to Instrument Executable Formats](https://lief-project.github.io/)
 - [OpenAI's GPT-3](https://openai.com/gpt-3/)
 
 ## License
