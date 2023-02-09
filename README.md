@@ -9,8 +9,26 @@ MABP is a partially context-aware chatbot powered by GPT-3 that serves for basic
 - Get sentiment analysis on whether certain imports are used in malicious code or not
 - Generate simple yara rules based on criteria collected during analysis
 - Learn tips and tricks with the `learn` command
+- Interact with GPT-3 directly via natural text in the `Input>` area
 
 This platform aims to streamline the process of performing basic static analysis on malware samples, making it easier and more accessible for security researchers, analysts and hobbyists alike. The context-awareness capabilities of GPT-3 ensures that the chatbot is able to respond to a variety of inputs and provide relevant information to users.
+
+## Setup Instructions
+
+To setup MABP, first you will need to create an `OPENAI_API_KEY` environment variable, and export your OpenAI API key to it.
+```bash
+export OPENAI_API_KEY='YOUR_OPENAI_API_KEY_HERE'
+```
+
+Next, install the required packages from `requirements.txt` with `pip`:
+```bash
+pip3 install -r requirements.txt
+```
+
+Finally, run the main script:
+```bash
+python3 ./mabp.py
+```
 
 ## How to Use
 
