@@ -37,6 +37,7 @@ To use MABP, simply run the main script and follow the prompt. You will be able 
 | Command | Description |
 | ------- | ----------- |
 | `banner` | Display ASCII art |
+| `learn` | Learn analysis tips and tricks |
 | `analyze_file` | Analyze a binary |
 | `make_yara` | Generate Yara rules |
 | `clear` | Clear the terminal |
