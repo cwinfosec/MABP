@@ -46,6 +46,16 @@ To use MABP, simply run the main script and follow the prompt. You will be able 
 The chatbot can be used through a command line interface or integrated into other systems. To get started, simply input your desired analysis task and follow the prompt.
 
 ## Potential Problems
+Currently, imports are filtered on specifically `KERNEL32.dll`. This will very likely cause you to miss key indicators from other libraries. This is a difficult problem to overcome, as passing all imports from all modules can easily overwhelm tokens - resulting in limited analysis, or no analysis whatsoever. It is recommended to change this filter in the `get_iat(binary)` function if you desire to get analysis on imports from other modules.
+
+```python
+def get_iat(binary):
+    """ Populate a dictionary with all imports """
+    iat = {}
+    for imported_library in binary.imports:
+        if imported_library.name == "KERNEL32.dll":
+```
+
 At times, MABP may provide information that is not accurate or appropriate for certain audiences. The context personality should gear it against this behavior; however, the possibility still exists. This is a larger problem within the field of machine learning, with no immediate workaround. Integrating OpenAI's content moderation API could significantly reduce the performance of the model's ability to provide information on the subject of malware and malware analysis - moreover, it may even refuse to answer entirely. Use your best judgment when interacting with MABP, as usage policy violations could result in your account being banned from OpenAI. 
 
 ## Contributing
