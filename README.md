@@ -45,6 +45,9 @@ To use MABP, simply run the main script and follow the prompt. You will be able 
 
 The chatbot can be used through a command line interface or integrated into other systems. To get started, simply input your desired analysis task and follow the prompt.
 
+## Potential Problems
+At times, MABP may provide information that is not accurate or appropriate for certain audiences. The context personality should gear it against this behavior; however, the possibility still exists. This is a larger problem within the field of machine learning, with no immediate workaround. Integrating OpenAI's content moderation API could significantly reduce the performance of the model's ability to provide information on the subject of malware and malware analysis - moreover, it may even refuse to answer entirely. Use your best judgment when interacting with MABP, as usage policy violations could result in your account being banned from OpenAI. 
+
 ## Contributing
 
 If you're interested in contributing to the project, please reach out to the project maintainers for more information on how to get involved.
