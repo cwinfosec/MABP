@@ -32,7 +32,7 @@ python3 ./mabp.py
 
 ## How to Use
 
-To use MABP, simply run the main script and follow the prompt. You will be able to select from a list of available commands by typing "help" for more information on each option. The following commands are currently implemented:
+To use MABP, simply run the main script and follow the prompt. You will be able to select from a list of available commands by typing `help` for more information on each option. The following commands are currently implemented:
 
 | Command | Description |
 | ------- | ----------- |
